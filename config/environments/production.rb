@@ -26,7 +26,12 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
+  Rails.application.config.assets.precompile += %w( *.js ^[^_]*.css *.css.erb )
+
+
+  config.assets.precompile += %w(reset.css bootstrap.min.css bootstrap-responsive.min.css font-awesome.css fancybox.css)
+ config.assets.precompile += %w(modernizr.js bootstrap.js)
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
