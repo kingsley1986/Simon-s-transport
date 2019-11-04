@@ -9,6 +9,8 @@ gem 'rails', '~> 6.0.0'
 gem 'pg'
 gem 'devise'
 gem 'activeadmin'
+gem "font-awesome-rails"
+
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
