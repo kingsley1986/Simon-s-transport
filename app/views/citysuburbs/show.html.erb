@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @citysuburb.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @citysuburb.description %>
+</p>
+
+<p>
+  <%= image_tag(@citysuburb.image.url(:square)) %>
+</p>
+
+<%= link_to 'Edit', edit_citysuburb_path(@citysuburb) %> |
+<%= link_to 'Back', homes_path %>

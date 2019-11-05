@@ -1,0 +1,25 @@
+
+<section id="speakers" class="wow fadeInUp">
+  <div class="container">
+    <% Citysuburb.all.in_groups_of(3, false).each do |up_coming|%>
+      <div class="row" style="background:red">
+        <% up_coming.each do |city_image| %>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <%= link_to image_tag(city_image.image.url(:medium)), citysuburb_path(city_image), alt:"Speaker 1", class:"img-fluid" %>
+              <div class="details">
+                <h3><%= city_image.title %></a></h3>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end%>
+      </div>
+    <% end%>
+  </div>
+</section>
