@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @township.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @township.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @township.image %>
+</p>
+
+<%= link_to 'Edit', edit_township_path(@township) %> |
+<%= link_to 'Back', townships_path %>

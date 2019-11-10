@@ -1,8 +1,8 @@
 <section id="speakers" class="wow fadeInUp">
 
   <div class="container">
-  <h1> Our recent city Tours<h1>
-    <% Citysuburb.all.in_groups_of(3, false).each do |up_coming|%>
+  <h1> township recent city Tours<h1>
+    <% Township.all.in_groups_of(3, false).each do |up_coming|%>
       <div class="row" style="background:red">
         <% up_coming.each do |city_image| %>
           <div class="col-lg-4 col-md-6">
@@ -24,3 +24,6 @@
     <% end%>
   </div>
 </section>
+
+
+<%= link_to 'New Township', new_township_path %>
