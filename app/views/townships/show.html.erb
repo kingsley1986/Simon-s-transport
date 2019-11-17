@@ -11,8 +11,7 @@
 </p>
 
 <p>
-  <strong>Image:</strong>
-  <%= @township.image %>
+  <%= image_tag(@township.image.url(:square)) %>
 </p>
 
 <%= link_to 'Edit', edit_township_path(@township) %> |

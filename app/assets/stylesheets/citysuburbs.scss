@@ -2,11 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-// <%= link_to image_tag(citysuburb.image.url(:medium)), citysuburb_path(citysuburb) %>
-// <% @citysuburbs.each do |citysuburb| %>
-
-
 #speakers {
   padding: 60px 0 30px 0;
 }
@@ -15,6 +10,10 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+}
+img.img-fluid {
+  width: 106%;
+  height: 106%;
 }
 
 #speakers .speaker .details {
@@ -32,7 +31,7 @@
   color: #fff;
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 5px; 
 }
 
 #speakers .speaker .details p {

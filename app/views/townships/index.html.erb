@@ -2,16 +2,16 @@
 
   <div class="container">
   <h1> Our recent city Tours<h1>
-    <% city_suburbs_index.all.in_groups_of(3, false).each do |city_sub|%>
+    <% township_index.all.in_groups_of(3, false).each do |up_coming|%>
       <div class="row" style="background:red">
-        <% city_sub.each do |city_image| %>
+        <% up_coming.each do |township_image| %>
           <div class="col-lg-4 col-md-6">
             <div class="speaker">
-              <%= link_to citysuburb_path(city_image) do %>
-   <%= image_tag(city_image.image.url(:medium), alt:"Speaker 1", class:"img-fluid") %>
+              <%= link_to township_path(township_image) do %>
+   <%= image_tag(township_image.image.url(:medium), alt:"Speaker 1", class:"img-fluid") %>
 <% end %>
               <div class="details">
-                <h3><%= city_image.title %></a></h3>
+                <h3><%= township_image.title %></a></h3>
                 <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-facebook"></i></a>
@@ -24,6 +24,6 @@
         <% end%>
       </div>
     <% end%>
-    <%= link_to "View All", citysuburbs_path %>
+    <%= paginate township_index %>
   </div>
 </section>
