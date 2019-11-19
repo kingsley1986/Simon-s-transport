@@ -98,7 +98,8 @@ nav {
     color: #fff;
     padding: 0px 0;
     border: none;
-    font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
 }
 #logo a span.fa {
     color: #fff;
