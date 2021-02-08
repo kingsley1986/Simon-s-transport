@@ -10,7 +10,7 @@ gem 'pg'
 gem 'devise'
 gem 'activeadmin'
 gem "font-awesome-rails"
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.1'
 gem 'rmagick', '~> 4.0'
 gem "mini_magick"
 gem "fog"
